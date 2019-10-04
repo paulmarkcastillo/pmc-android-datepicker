@@ -369,6 +369,12 @@ public class SingleDateAndTimePicker extends LinearLayout {
         }
     }
 
+    public void stopScroll() {
+        for (WheelPicker picker : pickers) {
+            picker.stopScroll();
+        }
+    }
+
     private void checkMinMaxDate(final WheelPicker picker) {
         checkBeforeMinDate(picker);
         checkAfterMaxDate(picker);
