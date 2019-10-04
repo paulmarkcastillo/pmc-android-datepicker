@@ -916,6 +916,10 @@ public abstract class WheelPicker<V> extends View {
         postInvalidate();
     }
 
+    public void stopScroll() {
+        scroller.forceFinished(true);
+    }
+
     /**
      * TODO: {@link Adapter#data} could contain 'Data' class objects. 'Data' could be composed of
      * a String: displayedValue (the value to be displayed in the wheel) and
